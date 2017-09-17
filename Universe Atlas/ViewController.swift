@@ -24,6 +24,8 @@ class ViewController: UIViewController, BWWalkthroughViewControllerDelegate {
             showWalkthrough()
             userDefaults.set(true, forKey: "walkthroughPresented")
             userDefaults.synchronize()
+        }else{
+            openMainView()
         }*/
     }
     
@@ -57,14 +59,15 @@ class ViewController: UIViewController, BWWalkthroughViewControllerDelegate {
     
     func walkthroughCloseButtonPressed() {
         //self.dismiss(animated: true, completion: nil)
-        
+        openMainView()
+    }
+    
+    func openMainView(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let view = storyboard.instantiateViewController(withIdentifier: "MainView")
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         //show window
         appDelegate.window?.rootViewController = view
-        
-        
     }
 
 }

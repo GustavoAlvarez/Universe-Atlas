@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Walkthrough View Controller-->
+        <scene sceneID="f1r-A2-2vT">
+            <objects>
+                <viewController storyboardIdentifier="walk" id="txJ-gV-nlq" customClass="BWWalkthroughViewController" customModule="Universe_Atlas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N4y-CV-VgM"/>
+                        <viewControllerLayoutGuide type="bottom" id="VXm-Ru-t4o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xnf-dR-UXp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="JJV-op-rSU">
+                                <rect key="frame" x="168" y="610" width="39" height="37"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4oX-Xj-2Xl">
+                                <rect key="frame" x="329" y="30" width="30" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="txJ-gV-nlq" eventType="touchUpInside" id="lTD-i1-A4i"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ad-hv-8C6" userLabel="Prev">
+                                <rect key="frame" x="0.0" y="597" width="50" height="50"/>
+                                <state key="normal" image="leftarrow">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextPage" destination="txJ-gV-nlq" eventType="touchUpInside" id="nCE-Ct-FR1"/>
+                                    <action selector="prevPage" destination="txJ-gV-nlq" eventType="touchUpInside" id="e66-mf-b68"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEr-zB-euS" userLabel="Next">
+                                <rect key="frame" x="309" y="597" width="50" height="50"/>
+                                <state key="normal" image="rightarrow">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextPage" destination="txJ-gV-nlq" eventType="touchUpInside" id="3Xf-wP-uC2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2872858942" green="0.14020672440000001" blue="0.30659055709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="JJV-op-rSU" secondAttribute="centerX" id="3FQ-Yc-qXy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4oX-Xj-2Xl" secondAttribute="trailing" id="7EC-fw-pg2"/>
+                            <constraint firstAttribute="centerX" secondItem="4oX-Xj-2Xl" secondAttribute="centerX" id="8eJ-k9-7sZ"/>
+                            <constraint firstItem="4oX-Xj-2Xl" firstAttribute="top" secondItem="N4y-CV-VgM" secondAttribute="bottom" constant="10" id="TAd-YH-JAB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IEr-zB-euS" secondAttribute="trailing" id="W3A-Rn-7QM"/>
+                            <constraint firstItem="VXm-Ru-t4o" firstAttribute="top" secondItem="IEr-zB-euS" secondAttribute="bottom" constant="20" id="WfW-9I-7S1"/>
+                            <constraint firstItem="VXm-Ru-t4o" firstAttribute="top" secondItem="JJV-op-rSU" secondAttribute="bottom" constant="20" id="YoK-mR-QzD"/>
+                            <constraint firstItem="3Ad-hv-8C6" firstAttribute="leading" secondItem="Xnf-dR-UXp" secondAttribute="leadingMargin" constant="-16" id="js7-xG-bvC"/>
+                            <constraint firstItem="VXm-Ru-t4o" firstAttribute="top" secondItem="3Ad-hv-8C6" secondAttribute="bottom" constant="20" id="mv9-pb-u4d"/>
+                            <constraint firstItem="VXm-Ru-t4o" firstAttribute="top" secondItem="4oX-Xj-2Xl" secondAttribute="bottom" constant="20" id="o36-qL-A9g"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8eJ-k9-7sZ"/>
+                                <exclude reference="o36-qL-A9g"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="4oX-Xj-2Xl" id="9vk-ZC-zzO"/>
+                        <outlet property="nextButton" destination="IEr-zB-euS" id="wDI-Y9-cj5"/>
+                        <outlet property="pageControl" destination="JJV-op-rSU" id="8MV-pN-TcZ"/>
+                        <outlet property="prevButton" destination="3Ad-hv-8C6" id="Yi4-k4-UAo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9eF-Ui-KFq" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="17" y="-853"/>
+        </scene>
+        <!--Walkthrough Page View Controller-->
+        <scene sceneID="hhd-kh-VF3">
+            <objects>
+                <viewController storyboardIdentifier="walk2" id="XYk-C3-fzG" customClass="BWWalkthroughPageViewController" customModule="Universe_Atlas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pn5-dG-6Iv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qmb-H6-Z3E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AvX-wc-16a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walk4" translatesAutoresizingMaskIntoConstraints="NO" id="KGE-p8-GzE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pf-CY-yoh">
+                                <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VISIT THE SOLAR SYSTEM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hge-Ts-lfN">
+                                        <rect key="frame" x="16" y="31.5" width="343" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earth, Mars or Satuen? Why not all of them! With the Potal you just need to walk through the blue mirror and puff..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaH-7K-LjG">
+                                        <rect key="frame" x="16" y="69" width="343" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1176470588" green="0.12941176469999999" blue="0.13725490200000001" alpha="0.28000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="AaH-7K-LjG" firstAttribute="top" secondItem="hge-Ts-lfN" secondAttribute="bottom" constant="16" id="8I0-aA-tRl"/>
+                                    <constraint firstAttribute="bottom" secondItem="AaH-7K-LjG" secondAttribute="bottom" constant="70" id="BP8-2X-aHZ"/>
+                                    <constraint firstItem="hge-Ts-lfN" firstAttribute="leading" secondItem="6pf-CY-yoh" secondAttribute="leading" constant="16" id="IMs-TU-a7F"/>
+                                    <constraint firstAttribute="trailing" secondItem="hge-Ts-lfN" secondAttribute="trailing" constant="16" id="KJq-ZR-dbx"/>
+                                    <constraint firstItem="AaH-7K-LjG" firstAttribute="leading" secondItem="6pf-CY-yoh" secondAttribute="leading" constant="16" id="bnL-qa-WZa"/>
+                                    <constraint firstAttribute="trailing" secondItem="AaH-7K-LjG" secondAttribute="trailing" constant="16" id="exp-no-I79"/>
+                                    <constraint firstAttribute="height" constant="200" id="fiF-n0-NPj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.44996994409119728" blue="0.59837911113572528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KGE-p8-GzE" secondAttribute="trailing" id="FA8-PH-MBa"/>
+                            <constraint firstItem="Qmb-H6-Z3E" firstAttribute="top" secondItem="6pf-CY-yoh" secondAttribute="bottom" id="ITM-t3-7ZY"/>
+                            <constraint firstItem="KGE-p8-GzE" firstAttribute="top" secondItem="AvX-wc-16a" secondAttribute="top" id="YHI-f6-4Qi"/>
+                            <constraint firstAttribute="trailing" secondItem="6pf-CY-yoh" secondAttribute="trailing" id="Z2a-fP-xsw"/>
+                            <constraint firstItem="Qmb-H6-Z3E" firstAttribute="top" secondItem="KGE-p8-GzE" secondAttribute="bottom" id="bgA-FP-uax"/>
+                            <constraint firstItem="KGE-p8-GzE" firstAttribute="leading" secondItem="AvX-wc-16a" secondAttribute="leading" id="hqh-RS-foB"/>
+                            <constraint firstItem="6pf-CY-yoh" firstAttribute="leading" secondItem="AvX-wc-16a" secondAttribute="leading" id="k6B-Q1-guJ"/>
+                        </constraints>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="point" keyPath="speedVariance">
+                            <point key="value" x="1.2" y="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="point" keyPath="speed">
+                            <point key="value" x="1" y="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e6r-P2-d5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1300" y="-853"/>
+        </scene>
+        <!--Walkthrough Page View Controller-->
+        <scene sceneID="Zl2-5E-AnK">
+            <objects>
+                <viewController storyboardIdentifier="walk3" id="cUf-Uq-irZ" customClass="BWWalkthroughPageViewController" customModule="Universe_Atlas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8yX-hk-N1f"/>
+                        <viewControllerLayoutGuide type="bottom" id="rzH-OD-JXT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DSN-o4-MZ4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walk5" translatesAutoresizingMaskIntoConstraints="NO" id="bbG-2C-pDf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1tl-aH-1uY">
+                                <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VISIT THE SOLAR SYSTEM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MeJ-6B-bhF">
+                                        <rect key="frame" x="16" y="31.5" width="343" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earth, Mars or Satuen? Why not all of them! With the Potal you just need to walk through the blue mirror and puff..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgt-Rz-WrF">
+                                        <rect key="frame" x="16" y="69" width="343" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1176470588" green="0.12941176469999999" blue="0.13725490200000001" alpha="0.28000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Ch4-6p-rp2"/>
+                                    <constraint firstAttribute="trailing" secondItem="kgt-Rz-WrF" secondAttribute="trailing" constant="16" id="EnW-6c-ZgM"/>
+                                    <constraint firstItem="kgt-Rz-WrF" firstAttribute="top" secondItem="MeJ-6B-bhF" secondAttribute="bottom" constant="16" id="Hdo-lg-y9h"/>
+                                    <constraint firstItem="MeJ-6B-bhF" firstAttribute="leading" secondItem="1tl-aH-1uY" secondAttribute="leading" constant="16" id="OAs-fx-4RJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="MeJ-6B-bhF" secondAttribute="trailing" constant="16" id="UsG-db-aRx"/>
+                                    <constraint firstItem="kgt-Rz-WrF" firstAttribute="leading" secondItem="1tl-aH-1uY" secondAttribute="leading" constant="16" id="YoG-KL-TxH"/>
+                                    <constraint firstAttribute="bottom" secondItem="kgt-Rz-WrF" secondAttribute="bottom" constant="70" id="xeJ-WS-uxs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.44996994410000002" blue="0.59837911109999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rzH-OD-JXT" firstAttribute="top" secondItem="bbG-2C-pDf" secondAttribute="bottom" id="Alg-UV-6ks"/>
+                            <constraint firstItem="1tl-aH-1uY" firstAttribute="leading" secondItem="DSN-o4-MZ4" secondAttribute="leading" id="SNA-Gp-gcs"/>
+                            <constraint firstItem="rzH-OD-JXT" firstAttribute="top" secondItem="1tl-aH-1uY" secondAttribute="bottom" id="eD9-kH-KqQ"/>
+                            <constraint firstItem="bbG-2C-pDf" firstAttribute="top" secondItem="DSN-o4-MZ4" secondAttribute="top" id="kbr-0k-oA8"/>
+                            <constraint firstItem="bbG-2C-pDf" firstAttribute="leading" secondItem="DSN-o4-MZ4" secondAttribute="leading" id="s6P-od-tLy"/>
+                            <constraint firstAttribute="trailing" secondItem="1tl-aH-1uY" secondAttribute="trailing" id="tDW-3S-anG"/>
+                            <constraint firstAttribute="trailing" secondItem="bbG-2C-pDf" secondAttribute="trailing" id="wEB-t2-Xsc"/>
+                        </constraints>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="point" keyPath="speedVariance">
+                            <point key="value" x="1.2" y="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="point" keyPath="speed">
+                            <point key="value" x="1" y="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggR-S6-CV2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1928.8" y="-853.22338830584715"/>
+        </scene>
+        <!--Walkthrough Page View Controller-->
+        <scene sceneID="ywq-dR-M81">
+            <objects>
+                <viewController storyboardIdentifier="walk1" id="JbJ-Ac-xgR" customClass="BWWalkthroughPageViewController" customModule="Universe_Atlas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P6H-j1-FXv"/>
+                        <viewControllerLayoutGuide type="bottom" id="bbg-ej-M6o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pGR-jM-79V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walk1" translatesAutoresizingMaskIntoConstraints="NO" id="7rh-PL-Mef">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSQ-hJ-7X9">
+                                <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRAVEL THROUGH A PORTAL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kvx-AJ-PkH">
+                                        <rect key="frame" x="16" y="31.5" width="343" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore every planet in the universe in a few moment. Not longer with the old spacehuttle but with the Portal!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgZ-gl-DLV">
+                                        <rect key="frame" x="16" y="69" width="343" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1176470588" green="0.12941176469999999" blue="0.13725490200000001" alpha="0.28000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="QgZ-gl-DLV" firstAttribute="leading" secondItem="aSQ-hJ-7X9" secondAttribute="leading" constant="16" id="8aB-MB-ZGX"/>
+                                    <constraint firstAttribute="bottom" secondItem="QgZ-gl-DLV" secondAttribute="bottom" constant="70" id="BK8-rW-FSO"/>
+                                    <constraint firstItem="Kvx-AJ-PkH" firstAttribute="leading" secondItem="aSQ-hJ-7X9" secondAttribute="leading" constant="16" id="CWk-zk-7os"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kvx-AJ-PkH" secondAttribute="trailing" constant="16" id="MFq-s7-djx"/>
+                                    <constraint firstItem="QgZ-gl-DLV" firstAttribute="top" secondItem="Kvx-AJ-PkH" secondAttribute="bottom" constant="16" id="NmA-q1-n5T"/>
+                                    <constraint firstAttribute="trailing" secondItem="QgZ-gl-DLV" secondAttribute="trailing" constant="16" id="Skv-ff-UIV"/>
+                                    <constraint firstAttribute="height" constant="200" id="jJy-Tl-b3o"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.32980523950000001" green="0.74408280770000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7rh-PL-Mef" secondAttribute="trailing" id="3wm-Ya-gaE"/>
+                            <constraint firstItem="bbg-ej-M6o" firstAttribute="top" secondItem="aSQ-hJ-7X9" secondAttribute="bottom" id="OHg-7y-NBC"/>
+                            <constraint firstItem="7rh-PL-Mef" firstAttribute="top" secondItem="pGR-jM-79V" secondAttribute="top" id="Svx-Nq-yqx"/>
+                            <constraint firstItem="bbg-ej-M6o" firstAttribute="top" secondItem="7rh-PL-Mef" secondAttribute="bottom" id="WZl-vP-kL5"/>
+                            <constraint firstItem="aSQ-hJ-7X9" firstAttribute="leading" secondItem="pGR-jM-79V" secondAttribute="leading" id="ftR-c9-5uA"/>
+                            <constraint firstAttribute="trailing" secondItem="aSQ-hJ-7X9" secondAttribute="trailing" id="g8f-aS-une"/>
+                            <constraint firstItem="7rh-PL-Mef" firstAttribute="leading" secondItem="pGR-jM-79V" secondAttribute="leading" id="jnw-QR-RPl"/>
+                        </constraints>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="point" keyPath="speedVariance">
+                            <point key="value" x="1.2" y="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="point" keyPath="speed">
+                            <point key="value" x="1" y="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e2t-6N-Fal" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="668" y="-853.22338830584715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="leftarrow" width="50" height="50"/>
+        <image name="rightarrow" width="50" height="50"/>
+        <image name="walk1" width="960" height="540"/>
+        <image name="walk4" width="960" height="540"/>
+        <image name="walk5" width="960" height="540"/>
+    </resources>
+</document>

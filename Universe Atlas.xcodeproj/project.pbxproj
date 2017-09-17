@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F1AFDB0220E90B3693E12F4 /* Pods_Universe_Atlas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331095691AA9168B75AA83DE /* Pods_Universe_Atlas.framework */; };
 		BF00A38E1F37E5D300A766A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00A38D1F37E5D300A766A6 /* AppDelegate.swift */; };
 		BF00A3901F37E5D300A766A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00A38F1F37E5D300A766A6 /* ViewController.swift */; };
 		BF00A3931F37E5D300A766A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF00A3911F37E5D300A766A6 /* Main.storyboard */; };
 		BF00A3951F37E5D300A766A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF00A3941F37E5D300A766A6 /* Assets.xcassets */; };
 		BF00A3981F37E5D300A766A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF00A3961F37E5D300A766A6 /* LaunchScreen.storyboard */; };
 		BF00A3A01F37ECB300A766A6 /* PlanetsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00A39F1F37ECB300A766A6 /* PlanetsTable.swift */; };
+		BFD3B35B1F6EF46200541191 /* BWWalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD3B35A1F6EF46200541191 /* BWWalkthroughPageViewController.swift */; };
+		BFD3B35D1F6EF46A00541191 /* BWWalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD3B35C1F6EF46A00541191 /* BWWalkthroughViewController.swift */; };
+		BFD3B35F1F6EF49C00541191 /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD3B35E1F6EF49C00541191 /* CustomPageViewController.swift */; };
+		BFD3B3611F6EF58B00541191 /* Walkthrough.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD3B3601F6EF58B00541191 /* Walkthrough.storyboard */; };
+		BFD3B3641F6EF91100541191 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD3B3631F6EF91100541191 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08D38614177AAD5C2F5A4E3E /* Pods-Universe Atlas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Universe Atlas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Universe Atlas/Pods-Universe Atlas.release.xcconfig"; sourceTree = "<group>"; };
+		331095691AA9168B75AA83DE /* Pods_Universe_Atlas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Universe_Atlas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF00A38A1F37E5D300A766A6 /* Universe Atlas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Universe Atlas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF00A38D1F37E5D300A766A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF00A38F1F37E5D300A766A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +32,14 @@
 		BF00A3971F37E5D300A766A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF00A3991F37E5D300A766A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF00A39F1F37ECB300A766A6 /* PlanetsTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetsTable.swift; sourceTree = "<group>"; };
+		BF95B0E51F65C3420049A935 /* paper_onboarding.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = paper_onboarding.framework; path = "../../../Library/Developer/Xcode/DerivedData/Universe_Atlas-fzbdlsrfkxguupcmxhzqidjcckgl/Build/Products/Debug-iphoneos/paper-onboarding/paper_onboarding.framework"; sourceTree = "<group>"; };
+		BFD3B35A1F6EF46200541191 /* BWWalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWWalkthroughPageViewController.swift; sourceTree = "<group>"; };
+		BFD3B35C1F6EF46A00541191 /* BWWalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWWalkthroughViewController.swift; sourceTree = "<group>"; };
+		BFD3B35E1F6EF49C00541191 /* CustomPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
+		BFD3B3601F6EF58B00541191 /* Walkthrough.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Walkthrough.storyboard; sourceTree = "<group>"; };
+		BFD3B3621F6EF70100541191 /* BWWalkthrough.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWWalkthrough.h; sourceTree = "<group>"; };
+		BFD3B3631F6EF91100541191 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D88F83FD681C71DCF4DC0138 /* Pods-Universe Atlas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Universe Atlas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Universe Atlas/Pods-Universe Atlas.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F1AFDB0220E90B3693E12F4 /* Pods_Universe_Atlas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DF411BFF9375A587B4699A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D88F83FD681C71DCF4DC0138 /* Pods-Universe Atlas.debug.xcconfig */,
+				08D38614177AAD5C2F5A4E3E /* Pods-Universe Atlas.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BF00A3811F37E5D300A766A6 = {
 			isa = PBXGroup;
 			children = (
 				BF00A38C1F37E5D300A766A6 /* Universe Atlas */,
 				BF00A38B1F37E5D300A766A6 /* Products */,
+				4DF411BFF9375A587B4699A3 /* Pods */,
+				FBF011B5F06C576325590C34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +84,7 @@
 		BF00A38C1F37E5D300A766A6 /* Universe Atlas */ = {
 			isa = PBXGroup;
 			children = (
+				BFD3B3591F6EF42E00541191 /* Utilities */,
 				BF00A38D1F37E5D300A766A6 /* AppDelegate.swift */,
 				BF00A39F1F37ECB300A766A6 /* PlanetsTable.swift */,
 				BF00A38F1F37E5D300A766A6 /* ViewController.swift */,
@@ -63,8 +92,30 @@
 				BF00A3941F37E5D300A766A6 /* Assets.xcassets */,
 				BF00A3961F37E5D300A766A6 /* LaunchScreen.storyboard */,
 				BF00A3991F37E5D300A766A6 /* Info.plist */,
+				BFD3B3631F6EF91100541191 /* MainViewController.swift */,
 			);
 			path = "Universe Atlas";
+			sourceTree = "<group>";
+		};
+		BFD3B3591F6EF42E00541191 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BFD3B3601F6EF58B00541191 /* Walkthrough.storyboard */,
+				BFD3B3621F6EF70100541191 /* BWWalkthrough.h */,
+				BFD3B35C1F6EF46A00541191 /* BWWalkthroughViewController.swift */,
+				BFD3B35E1F6EF49C00541191 /* CustomPageViewController.swift */,
+				BFD3B35A1F6EF46200541191 /* BWWalkthroughPageViewController.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		FBF011B5F06C576325590C34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF95B0E51F65C3420049A935 /* paper_onboarding.framework */,
+				331095691AA9168B75AA83DE /* Pods_Universe_Atlas.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF00A39C1F37E5D300A766A6 /* Build configuration list for PBXNativeTarget "Universe Atlas" */;
 			buildPhases = (
+				1E29EC22330A104C8EDF5C64 /* [CP] Check Pods Manifest.lock */,
 				BF00A3861F37E5D300A766A6 /* Sources */,
 				BF00A3871F37E5D300A766A6 /* Frameworks */,
 				BF00A3881F37E5D300A766A6 /* Resources */,
+				B2620A83D135BABEEC4459B1 /* [CP] Embed Pods Frameworks */,
+				7488273F9CF13F9DD7C49A75 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF00A3981F37E5D300A766A6 /* LaunchScreen.storyboard in Resources */,
+				BFD3B3611F6EF58B00541191 /* Walkthrough.storyboard in Resources */,
 				BF00A3951F37E5D300A766A6 /* Assets.xcassets in Resources */,
 				BF00A3931F37E5D300A766A6 /* Main.storyboard in Resources */,
 			);
@@ -135,12 +190,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E29EC22330A104C8EDF5C64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7488273F9CF13F9DD7C49A75 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Universe Atlas/Pods-Universe Atlas-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2620A83D135BABEEC4459B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Universe Atlas/Pods-Universe Atlas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BF00A3861F37E5D300A766A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD3B3641F6EF91100541191 /* MainViewController.swift in Sources */,
 				BF00A3A01F37ECB300A766A6 /* PlanetsTable.swift in Sources */,
+				BFD3B35B1F6EF46200541191 /* BWWalkthroughPageViewController.swift in Sources */,
+				BFD3B35F1F6EF49C00541191 /* CustomPageViewController.swift in Sources */,
+				BFD3B35D1F6EF46A00541191 /* BWWalkthroughViewController.swift in Sources */,
 				BF00A3901F37E5D300A766A6 /* ViewController.swift in Sources */,
 				BF00A38E1F37E5D300A766A6 /* AppDelegate.swift in Sources */,
 			);
@@ -263,6 +370,7 @@
 		};
 		BF00A39D1F37E5D300A766A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D88F83FD681C71DCF4DC0138 /* Pods-Universe Atlas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4KE3BN75Y9;
@@ -276,6 +384,7 @@
 		};
 		BF00A39E1F37E5D300A766A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08D38614177AAD5C2F5A4E3E /* Pods-Universe Atlas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4KE3BN75Y9;
@@ -306,6 +415,7 @@
 				BF00A39E1F37E5D300A766A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

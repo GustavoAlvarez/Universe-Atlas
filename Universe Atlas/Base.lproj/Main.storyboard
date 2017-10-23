@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2hu-jF-YNp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2hu-jF-YNp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -62,7 +62,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="Ssr-XD-J2g" secondAttribute="trailing" constant="8" id="sb4-fJ-XEp"/>
                                             </constraints>
                                         </view>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earth" translatesAutoresizingMaskIntoConstraints="NO" id="xPd-qA-H9h">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Earth" translatesAutoresizingMaskIntoConstraints="NO" id="xPd-qA-H9h">
                                             <rect key="frame" x="10" y="4" width="100" height="142"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="100" id="3Nn-GR-szZ"/>
@@ -85,6 +85,7 @@
                                     <outlet property="nameLabel" destination="Ykv-aH-VUE" id="aXg-9B-vf3"/>
                                     <outlet property="planetImage" destination="xPd-qA-H9h" id="dI9-Ja-sbN"/>
                                     <outlet property="systemLabel" destination="Lsz-5T-6lw" id="XuT-F7-7vC"/>
+                                    <segue destination="yde-zg-R7l" kind="show" id="vnx-5g-CJk"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -99,7 +100,180 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P42-3h-p7j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1670" y="677"/>
+            <point key="canvasLocation" x="1669.5999999999999" y="676.91154422788611"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OVM-5E-1GK">
+            <objects>
+                <viewController id="1hZ-qu-axN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qYe-hI-BEP"/>
+                        <viewControllerLayoutGuide type="bottom" id="H9M-qU-gZ7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YwT-1d-GaY">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7v-SO-A2h">
+                                <rect key="frame" x="0.0" y="64" width="1000" height="936"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milkyway" translatesAutoresizingMaskIntoConstraints="NO" id="vlf-BM-Z4w">
+                                        <rect key="frame" x="425" y="393" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="Dia-af-Qz4"/>
+                                            <constraint firstAttribute="width" constant="150" id="q9s-wX-6n7"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="solar" translatesAutoresizingMaskIntoConstraints="NO" id="ouc-re-Qlr">
+                                        <rect key="frame" x="103" y="335" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="BLy-mU-MI7"/>
+                                            <constraint firstAttribute="height" constant="150" id="l5V-BT-XWX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Earth" translatesAutoresizingMaskIntoConstraints="NO" id="6di-jU-axZ">
+                                        <rect key="frame" x="164" y="762" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="DXU-gF-RTN"/>
+                                            <constraint firstAttribute="width" constant="150" id="FDN-mI-Fvb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mars" translatesAutoresizingMaskIntoConstraints="NO" id="W01-Dh-26V">
+                                        <rect key="frame" x="749" y="214" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="0Xf-ZM-PVn"/>
+                                            <constraint firstAttribute="height" constant="150" id="8g5-Ca-l8M"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Saturn" translatesAutoresizingMaskIntoConstraints="NO" id="mMh-kd-yMb">
+                                        <rect key="frame" x="351" y="58" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="s0J-cJ-NXy"/>
+                                            <constraint firstAttribute="width" constant="150" id="ul1-Fp-Whj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Venus" translatesAutoresizingMaskIntoConstraints="NO" id="OQS-ep-muE">
+                                        <rect key="frame" x="622" y="654" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="VMB-G6-t9F"/>
+                                            <constraint firstAttribute="height" constant="150" id="lp7-7o-lHD"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="6di-jU-axZ" secondAttribute="bottom" constant="24" id="1d8-Ru-ADg"/>
+                                    <constraint firstItem="mMh-kd-yMb" firstAttribute="top" secondItem="e7v-SO-A2h" secondAttribute="top" constant="58" id="72U-ec-Qwp"/>
+                                    <constraint firstItem="ouc-re-Qlr" firstAttribute="top" secondItem="e7v-SO-A2h" secondAttribute="top" constant="335" id="76K-U1-WgU"/>
+                                    <constraint firstAttribute="trailing" secondItem="W01-Dh-26V" secondAttribute="trailing" constant="101" id="9hP-r6-qVx"/>
+                                    <constraint firstItem="W01-Dh-26V" firstAttribute="top" secondItem="e7v-SO-A2h" secondAttribute="top" constant="214" id="BFC-ow-y6K"/>
+                                    <constraint firstItem="vlf-BM-Z4w" firstAttribute="top" secondItem="mMh-kd-yMb" secondAttribute="bottom" constant="185" id="Izw-vf-Adl"/>
+                                    <constraint firstAttribute="trailing" secondItem="OQS-ep-muE" secondAttribute="trailing" constant="228" id="NrK-9J-4ba"/>
+                                    <constraint firstAttribute="bottom" secondItem="OQS-ep-muE" secondAttribute="bottom" constant="132" id="S09-A5-Quv"/>
+                                    <constraint firstItem="6di-jU-axZ" firstAttribute="leading" secondItem="e7v-SO-A2h" secondAttribute="leading" constant="164" id="WUG-En-eHa"/>
+                                    <constraint firstItem="OQS-ep-muE" firstAttribute="top" secondItem="e7v-SO-A2h" secondAttribute="top" constant="654" id="fR1-Mq-38H"/>
+                                    <constraint firstItem="OQS-ep-muE" firstAttribute="leading" secondItem="e7v-SO-A2h" secondAttribute="leading" constant="622" id="gP3-aj-twg"/>
+                                    <constraint firstItem="ouc-re-Qlr" firstAttribute="leading" secondItem="e7v-SO-A2h" secondAttribute="leading" constant="103" id="plH-2e-VUa"/>
+                                    <constraint firstItem="mMh-kd-yMb" firstAttribute="leading" secondItem="e7v-SO-A2h" secondAttribute="leading" constant="351" id="plU-t6-Dvb"/>
+                                    <constraint firstItem="vlf-BM-Z4w" firstAttribute="leading" secondItem="ouc-re-Qlr" secondAttribute="trailing" constant="172" id="tfn-Da-TfX"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18823529410000001" green="0.15686274510000001" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="H9M-qU-gZ7" firstAttribute="top" secondItem="e7v-SO-A2h" secondAttribute="bottom" id="NTO-9i-1Yw"/>
+                            <constraint firstAttribute="trailing" secondItem="e7v-SO-A2h" secondAttribute="trailing" id="OHK-cJ-tfX"/>
+                            <constraint firstItem="e7v-SO-A2h" firstAttribute="top" secondItem="qYe-hI-BEP" secondAttribute="bottom" id="QQE-HT-rgV"/>
+                            <constraint firstItem="e7v-SO-A2h" firstAttribute="leading" secondItem="YwT-1d-GaY" secondAttribute="leading" id="oM9-1Y-ZRj"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="1000" height="1000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w0D-n2-2fW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="841.60000000000002" y="1587.7061469265368"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hFw-aW-GAL">
+            <objects>
+                <viewController id="yde-zg-R7l" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GCN-Mj-riv"/>
+                        <viewControllerLayoutGuide type="bottom" id="wbw-fJ-Sfa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PUD-eT-ctW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="2kG-Ht-fvT">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tY4-BB-Hoy">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="603"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hab1" translatesAutoresizingMaskIntoConstraints="NO" id="qFC-s6-Kap">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="cEV-ow-WiK"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Earth" translatesAutoresizingMaskIntoConstraints="NO" id="okA-JR-F8T">
+                                                <rect key="frame" x="137" y="100" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="pbj-Gw-IHO"/>
+                                                    <constraint firstAttribute="width" constant="100" id="zgX-6w-jQQ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVT-7q-mxi">
+                                                <rect key="frame" x="12" y="212" width="350" height="391"/>
+                                                <mutableString key="text">I don't know what you could say about a day in which you have seen four beautiful sunsets.
+
+Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+
+Houston, Tranquillity Base here. The Eagle has landed.
+
+Across the sea of space, the stars are other suns.
+
+We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="WVT-7q-mxi" secondAttribute="trailing" constant="12" id="40D-k6-uXO"/>
+                                            <constraint firstItem="qFC-s6-Kap" firstAttribute="leading" secondItem="tY4-BB-Hoy" secondAttribute="leading" id="BRf-Wd-vpd"/>
+                                            <constraint firstItem="okA-JR-F8T" firstAttribute="top" secondItem="qFC-s6-Kap" secondAttribute="bottom" constant="-50" id="Ya4-Vw-QAM"/>
+                                            <constraint firstItem="qFC-s6-Kap" firstAttribute="top" secondItem="tY4-BB-Hoy" secondAttribute="top" id="Z4R-H3-2G2"/>
+                                            <constraint firstAttribute="bottom" secondItem="WVT-7q-mxi" secondAttribute="bottom" id="dxm-pq-IcZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="qFC-s6-Kap" secondAttribute="trailing" id="rtw-1M-Q4b"/>
+                                            <constraint firstItem="okA-JR-F8T" firstAttribute="centerX" secondItem="tY4-BB-Hoy" secondAttribute="centerX" id="spX-q6-CZi"/>
+                                            <constraint firstItem="WVT-7q-mxi" firstAttribute="leading" secondItem="tY4-BB-Hoy" secondAttribute="leading" constant="12" id="tsU-0e-8Gr"/>
+                                            <constraint firstItem="WVT-7q-mxi" firstAttribute="top" secondItem="okA-JR-F8T" secondAttribute="bottom" constant="12" id="yEG-tA-D9O"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tY4-BB-Hoy" firstAttribute="centerY" secondItem="2kG-Ht-fvT" secondAttribute="centerY" id="6Ok-nZ-d1d"/>
+                                    <constraint firstItem="tY4-BB-Hoy" firstAttribute="top" secondItem="2kG-Ht-fvT" secondAttribute="top" id="8ZH-K3-oN0"/>
+                                    <constraint firstItem="tY4-BB-Hoy" firstAttribute="leading" secondItem="2kG-Ht-fvT" secondAttribute="leading" id="Cqd-CN-qPN"/>
+                                    <constraint firstAttribute="bottom" secondItem="tY4-BB-Hoy" secondAttribute="bottom" id="Q9h-7R-TFL"/>
+                                    <constraint firstItem="tY4-BB-Hoy" firstAttribute="centerX" secondItem="2kG-Ht-fvT" secondAttribute="centerX" id="QaF-RL-at5"/>
+                                    <constraint firstAttribute="trailing" secondItem="tY4-BB-Hoy" secondAttribute="trailing" id="lRb-IJ-k7t"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18823529410000001" green="0.15686274510000001" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2kG-Ht-fvT" secondAttribute="trailing" id="KfV-af-Eed"/>
+                            <constraint firstItem="2kG-Ht-fvT" firstAttribute="leading" secondItem="PUD-eT-ctW" secondAttribute="leading" id="Tf7-g5-XtT"/>
+                            <constraint firstItem="wbw-fJ-Sfa" firstAttribute="top" secondItem="2kG-Ht-fvT" secondAttribute="bottom" id="hJg-0e-JjO"/>
+                            <constraint firstItem="2kG-Ht-fvT" firstAttribute="top" secondItem="GCN-Mj-riv" secondAttribute="bottom" id="w2b-Np-7aI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uJD-EP-ksN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2432.8000000000002" y="676.91154422788611"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="we4-5P-Z2V">
@@ -119,7 +293,7 @@
             </objects>
             <point key="canvasLocation" x="-543.20000000000005" y="676.91154422788611"/>
         </scene>
-        <!--Main Controller-->
+        <!--Atlas-->
         <scene sceneID="AaR-Px-27V">
             <objects>
                 <viewController id="IvP-vi-fq0" customClass="MainViewController" customModule="Universe_Atlas" customModuleProvider="target" sceneMemberID="viewController">
@@ -131,20 +305,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3k-Pp-kxg">
-                                <rect key="frame" x="27" y="89" width="316" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Solar system">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3k-Pp-kxg">
+                                <rect key="frame" x="137" y="76" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1f9-kK-NuF"/>
+                                    <constraint firstAttribute="height" constant="100" id="GX2-nt-LQp"/>
+                                </constraints>
+                                <state key="normal" image="milkyway">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="RHu-4b-8JL" kind="show" id="yml-1Y-z5x"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZf-xA-ttZ">
+                                <rect key="frame" x="56" y="205" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="1hZ-qu-axN" kind="show" id="dq6-LY-N05"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.18823529410000001" green="0.15686274510000001" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="S3k-Pp-kxg" firstAttribute="centerX" secondItem="dvJ-cl-g97" secondAttribute="centerX" id="4Qv-C2-cSn"/>
+                            <constraint firstItem="S3k-Pp-kxg" firstAttribute="top" secondItem="Eab-lW-keg" secondAttribute="bottom" constant="12" id="bVc-xG-mcf"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Main Controller" id="Wbf-Hb-PfF">
+                    <navigationItem key="navigationItem" title="Atlas" id="Wbf-Hb-PfF">
                         <barButtonItem key="backBarButtonItem" title=" " id="sZm-kd-Zzg"/>
                     </navigationItem>
                 </viewController>
@@ -157,7 +346,7 @@
             <objects>
                 <navigationController storyboardIdentifier="MainView" id="JuY-YD-ZLO" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pan-IL-DBa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -170,6 +359,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="earth" width="256" height="256"/>
+        <image name="Earth" width="256" height="256"/>
+        <image name="Mars" width="256" height="256"/>
+        <image name="Saturn" width="256" height="256"/>
+        <image name="Venus" width="256" height="256"/>
+        <image name="hab1" width="1280" height="720"/>
+        <image name="milkyway" width="256" height="256"/>
+        <image name="solar" width="256" height="256"/>
     </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

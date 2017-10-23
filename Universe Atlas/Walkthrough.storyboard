@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Walkthrough View Controller-->
         <scene sceneID="f1r-A2-2vT">
@@ -23,7 +28,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="JJV-op-rSU">
-                                <rect key="frame" x="168" y="610" width="39" height="37"/>
+                                <rect key="frame" x="168" y="620" width="39" height="37"/>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4oX-Xj-2Xl">
                                 <rect key="frame" x="329" y="30" width="30" height="29"/>
@@ -64,7 +69,7 @@
                             <constraint firstItem="4oX-Xj-2Xl" firstAttribute="top" secondItem="N4y-CV-VgM" secondAttribute="bottom" constant="10" id="TAd-YH-JAB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IEr-zB-euS" secondAttribute="trailing" id="W3A-Rn-7QM"/>
                             <constraint firstItem="VXm-Ru-t4o" firstAttribute="top" secondItem="IEr-zB-euS" secondAttribute="bottom" constant="20" id="WfW-9I-7S1"/>
-                            <constraint firstItem="VXm-Ru-t4o" firstAttribute="top" secondItem="JJV-op-rSU" secondAttribute="bottom" constant="20" id="YoK-mR-QzD"/>
+                            <constraint firstItem="VXm-Ru-t4o" firstAttribute="top" secondItem="JJV-op-rSU" secondAttribute="bottom" constant="10" id="YoK-mR-QzD"/>
                             <constraint firstItem="3Ad-hv-8C6" firstAttribute="leading" secondItem="Xnf-dR-UXp" secondAttribute="leadingMargin" constant="-16" id="js7-xG-bvC"/>
                             <constraint firstItem="VXm-Ru-t4o" firstAttribute="top" secondItem="3Ad-hv-8C6" secondAttribute="bottom" constant="20" id="mv9-pb-u4d"/>
                             <constraint firstItem="VXm-Ru-t4o" firstAttribute="top" secondItem="4oX-Xj-2Xl" secondAttribute="bottom" constant="20" id="o36-qL-A9g"/>
